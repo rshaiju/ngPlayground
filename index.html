@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="/lib/angular.min.js"></script>
+    <script src="/lib/angular-route.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/app.filters/capitalize.js"></script>
+    <script src="app/home/controllers/home.controller.js"></script>
+    <script src="app/arena/controllers/arena.controller.js"></script>
+    <script src="app/players/controllers/players.controller.js"></script>
+    <script src="app/main.controller.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="content/style.css" rel="stylesheet">
+    <base href="/">
+</head>
+
+<body ng-app="myApp">
+    <nav class="navbar navbar-expand-sm bg-warning">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/players">Players</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container mt-4" ng-controller="mainCtrl as mainCtrl">
+        <div class="jumbotron">
+            <h1 class="display-4">{{mainCtrl.appTitle}}</h1>
+            <div ng-if="mainCtrl.user">
+                <div class="float-right">Hello {{mainCtrl.user}}</div>
+            </div>
+        </div>
+        <div id="viewPort">
+            <ng-view></ng-view>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

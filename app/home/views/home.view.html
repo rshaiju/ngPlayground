@@ -1,0 +1,19 @@
+<div class="card mt-4" ng-controller="homeCtrl as homeCtrl">
+    <div class="card">
+        <div class="card-header">
+            User info
+        </div>
+        <div class="card-body">
+            <form>
+                <label for="">User:</label>
+                <input type="text" ng-model="mainCtrl.user">
+                <br />
+                <div class="float-right">
+                    <button type="button" class="btn btn-primary" ng-click="homeCtrl.login()">Log
+                        in</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
