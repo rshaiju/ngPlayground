@@ -1,44 +1,48 @@
+module App.Players{
+    class PlayersController implements App.Players.Models.PlayersModel{
+        players: any[];
+        constructor(){
+            this.players = [
+                {
+                    name: 'ram',
+                    age: 25,
+                    gender: 'male',
+                    likes:0,
+                    dislikes:0
+                },
+                {
+                    name: 'syam',
+                    age: 24,
+                    gender: 'male',
+                    likes:0,
+                    dislikes:0
+                },
+                {
+                    name: 'babu',
+                    age: 15,
+                    gender: 'male',
+                    likes:0,
+                    dislikes:0
+                },
+                {
+                    name: 'raju',
+                    age: 20,
+                    gender: 'male',
+                    likes:0,
+                    dislikes:0
+                }
+            ];
+        }
 
-(function name() {
-    angular.module('myApp').controller('playersCtrl', [function () {
-        this.players = [
-            {
-                name: 'ram',
-                age: 25,
-                gender: 'male',
-                likes:0,
-                dislikes:0
-            },
-            {
-                name: 'syam',
-                age: 24,
-                gender: 'male',
-                likes:0,
-                dislikes:0
-            },
-            {
-                name: 'babu',
-                age: 15,
-                gender: 'male',
-                likes:0,
-                dislikes:0
-            },
-            {
-                name: 'raju',
-                age: 20,
-                gender: 'male',
-                likes:0,
-                dislikes:0
-            }
-        ];
-
-        this.like=function(player){
+        like(player:App.Players.Models.Player){
             player.likes+=1;
         }
 
-        this.dislike=function(player){
+        dislike(player:App.Players.Models.Player){
             player.dislikes+=1;
         }
-    }]);
-})();
 
+    }
+
+    angular.module('myApp').controller('playersCtrl', [PlayersController]);
+}

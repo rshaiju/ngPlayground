@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/rshaiju/ngPlayground#readme",
   "dependencies": {
-    "@types/angularjs": "^1.5.14-alpha"
+    "@types/angularjs": "^1.5.14-alpha",
+    "del": "^4.1.0",
+    "gulp": "^4.0.0"
   }
 }

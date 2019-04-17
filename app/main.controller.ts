@@ -1,10 +1,12 @@
+module App{
 
-(function name() {
-    angular.module('myApp').controller('mainCtrl', [function () {
-        this.appTitle = 'Play Arena...';
-        this.authorInfo = {
-            name: 'shaiju rajan'
+    class MainController{
+        appTitle:string;
+        constructor(){
+            this.appTitle = 'Play Arena...';
         }
-    }]);
 
-})();
+    }
+
+    angular.module('myApp').controller('mainCtrl', [MainController]);
+}
