@@ -1,4 +1,3 @@
-///<reference path="./../lib/angular.min.js"/>
 
 (function name() {
     angular.module('myApp').controller('mainCtrl', [function () {

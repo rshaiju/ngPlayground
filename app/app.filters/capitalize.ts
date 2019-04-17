@@ -1,4 +1,3 @@
-///<reference path="./../../lib/angular.min.js"/>
 
 angular.module('myApp').filter('capitalize',[function(){
     return function(input){

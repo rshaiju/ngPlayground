@@ -1,4 +1,3 @@
-///<reference path="./../../../lib/angular.min.js"/>
 
 angular.module('myApp').controller('homeCtrl',['$location',function($location){
     this.login=function(){

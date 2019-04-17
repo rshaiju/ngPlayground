@@ -1,7 +1,3 @@
-/// <reference path="./../lib/angular.min.js" />
-///<reference path="./../lib/angular-route.min.js"/>
-
-
 var app = angular.module('myApp', ['ngRoute']);
 
 app.config(function ($routeProvider,$locationProvider) {

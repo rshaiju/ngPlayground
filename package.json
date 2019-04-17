@@ -1,0 +1,25 @@
+{
+  "name": "anjs",
+  "version": "1.0.0",
+  "description": "Test app",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rshaiju/ngPlayground.git"
+  },
+  "author": "Shaiju Rajan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rshaiju/ngPlayground/issues"
+  },
+  "homepage": "https://github.com/rshaiju/ngPlayground#readme",
+  "dependencies": {
+    "@types/angularjs": "^1.5.14-alpha"
+  }
+}

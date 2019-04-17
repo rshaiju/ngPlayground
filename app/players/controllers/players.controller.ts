@@ -1,4 +1,4 @@
-///<reference path="./../../../lib/angular.min.js"/>
+
 (function name() {
     angular.module('myApp').controller('playersCtrl', [function () {
         this.players = [
