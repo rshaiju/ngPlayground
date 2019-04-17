@@ -1,6 +1,6 @@
 module App.Players{
     class PlayersController implements App.Players.Models.PlayersModel{
-        players: any[];
+        players:  App.Players.Models.Player[];
         constructor(){
             this.players = [
                 {
