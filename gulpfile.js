@@ -1,6 +1,6 @@
 var gulp=require('gulp');
 var del=require('del');
-var del2=require('del2');
+var del2=require('del3');
 
 
 gulp.task('cleanBuild',function(done){
